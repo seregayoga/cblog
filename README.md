@@ -15,10 +15,10 @@ sudo apt-get install libpq-dev
 gcc -I/usr/include/postgresql/ -L/usr/lib/postgresql/9.3/lib/ -o ./pgtest pgtest.c -lpq
 
 # Compile
-gcc -I/usr/local/include/ -I/usr/include/postgresql/ -L/usr/lib/postgresql/9.3/lib/ -o /home/sergey/projects/cblog/bin/cblog /home/sergey/projects/cblog/src/cblog.c /usr/local/lib/libfcgi.a -lpq
+gcc -I/usr/local/include/ -I/usr/include/postgresql/ -L/usr/lib/postgresql/9.3/lib/ -o /path/to/source/cblog/bin/cblog /path/to/source/cblog/src/cblog.c /usr/local/lib/libfcgi.a -lpq
 
 # Run
-spawn-fcgi -a127.0.0.1 -p9002 -F1 /home/sergey/projects/cblog/bin/cblog
+spawn-fcgi -a127.0.0.1 -p9002 -F1 /path/to/source/cblog/bin/cblog
 
 # Problem solving
 upd: change to md5
