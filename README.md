@@ -1,3 +1,13 @@
+# Version 0.0.1
+
+# Required soft
+Nginx http://nginx.org/
+Spawn fcgi http://redmine.lighttpd.net/projects/spawn-fcgi
+PostgreSQL http://www.postgresql.org/
+
+# Install fast cgi development kit
+http://www.fastcgi.com
+
 # Compile
 gcc -I/usr/local/include/ -I/usr/include/postgresql/ -L/usr/lib/postgresql/9.3/lib/ -o /home/sergey/projects/cblog/bin/cblog /home/sergey/projects/cblog/src/cblog.c /usr/local/lib/libfcgi.a -lpq
 
