@@ -15,7 +15,9 @@ int main(int argc, char *argv[])
     int offset = 0;
     /* TODO remove hardcore */
     char *formatted_query = "SELECT * FROM posts LIMIT %d OFFSET %d";
-    char query[1000];
+    /* plus size of two digits and the end of string */
+    char *query = (char *)malloc(sizeof(char) * (sizeof(formatted_query) + 2 * 10 + 1));
+
     
     PGconn     *conn;
     PGresult   *res; 
