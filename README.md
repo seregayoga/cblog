@@ -2,7 +2,9 @@
 
 # Required soft
 Nginx http://nginx.org/
+
 Spawn fcgi http://redmine.lighttpd.net/projects/spawn-fcgi
+
 PostgreSQL http://www.postgresql.org/
 
 # Install fast cgi development kit
